@@ -20,14 +20,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-  <script src="mediaelement/mediaelement-and-player.min.js"></script>
-
   <link rel="stylesheet" href="css/style.css">
-
   <link rel="stylesheet" href="mediaelement/mediaelementplayer.css" >
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -49,7 +42,9 @@
        <p>For some reason the audio won't play. Please try again or see the <a href="/faq.html">FAQ</a> page for guidance on playing the stream in a media player of your choice.</p>
    </div>
     <div id="listen">
-      <div id="tower"></div>
+      <div id="tower" >
+	<div id="smoke" ></div>
+      </div>
     </div>
     <div id="faq">
       <div class="row">
@@ -143,11 +138,15 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 
   <!-- scripts concatenated and minified via build script -->
+  <script src="mediaelement/mediaelement-and-player.min.js"></script>
   <script defer src="js/plugins.js"></script>
   <script defer src="js/libs/jquery.smooth-scroll.js"></script>
+  <script defer src="js/libs/smokeEffect.js"></script>
   <script defer src="js/script.js"></script>
   <!-- end scripts -->
 
@@ -167,6 +166,5 @@
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-
 </body>
 </html>

@@ -262,8 +262,20 @@ td { vertical-align: top; }
     height:650px;
     background-position:center;
     background-attachment:scroll;
+    Position:relative;
 }
 
+#smoke {
+    position: absolute;
+    left: 49%;
+    top: 25%;
+}
+
+.puff {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+}
 
 #faq {
  margin:0;
