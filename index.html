@@ -21,8 +21,14 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <script src="mediaelement/mediaelement-and-player.min.js"></script>
+
   <link rel="stylesheet" href="css/style.css">
-  
+
+  <link rel="stylesheet" href="mediaelement/mediaelementplayer.css" >
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
@@ -115,14 +121,17 @@
 </div>
 <footer class="main-footer clearfix">
       <div id="player" class="panel">
-	<img src="img/listenr.png"  />
-	<audio controls preload>
-	  <source src="http://hackernewsradio.com:8000/news.ogg" />
-	  <source src="http://hackernewsradio.com:8000/news.mp3" />
+	<audio controls="control" preload="none" height="30" width="120">
+	  <source src="http://hackernewsradio.com:8000/news.ogg" type="audio/ogg" />
+	  <source src="http://hackernewsradio.com:8000/news.mp3" type="audio/mpeg" />
+	  <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+	  <object width="400" height="30" type="application/x-shockwave-flash" data="mediaelement/flashmediaelement.swf">
+            <param name="movie" value="mediaelement/flashmediaelement.swf" />
+            <param name="flashvars" value="controls=true&file=http://hackernewsradio.com:8000/news.mp3" />
+	  </object>
 	</audio>
-
       </div>
-
+      <img src="img/listen.png"  />
       <div id="credit" class="panel">
         <p>Photo of <a href="http://de.wikipedia.org/wiki/Funkturm_Wien-Arsenal">Wien-Arsenal</a></p>
         <p><a href="http://www.andreaspolster.com">© Andreas Polster</a></p>
@@ -134,12 +143,11 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 
   <!-- scripts concatenated and minified via build script -->
   <script defer src="js/plugins.js"></script>
+  <script defer src="js/libs/jquery.smooth-scroll.js"></script>
   <script defer src="js/script.js"></script>
   <!-- end scripts -->
 

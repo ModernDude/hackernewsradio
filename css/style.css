@@ -251,7 +251,7 @@ td { vertical-align: top; }
 #listen {
     background-color: black;
     position:relative;
-    padding-bottom: 240px;
+    padding-bottom: 340px;
 }
 
 #tower {
@@ -287,7 +287,7 @@ td { vertical-align: top; }
     width: 640px;
     margin-left: auto;
     margin-right: auto;
- }
+}
 
 #faq h1 {
     text-align:left;
@@ -326,7 +326,7 @@ dt {
    bottom:0;
    height: 50px;
    padding: 2px;
-   border-top: 1px ##1A1A1A solid;
+   border-top: 1px #1A1A1A solid;
    background-color:#000;
 }
 
@@ -334,11 +334,11 @@ dt {
     float:left;
     vertical-align: middle;
     padding:2px 8px;
+    height:100%;
+    padding-top:10px;
 }
 
-#player audio {
-    vertical-align:middle;
-}
+
 
 #credit {
     float:right;
