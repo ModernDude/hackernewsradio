@@ -1,7 +1,9 @@
 (function ($, smoke) {
     $(function (){
 	$('a').smoothScroll();
-	$('audio').mediaelementplayer({features: ['playpause','current','volume','fullscreen']});
+	$('audio').mediaelementplayer({
+	    features: ['playpause','current','volume','fullscreen']
+	});
 
 	if (smoke) {
 	    smoke.imgLocation = "img/smoke.png";
