@@ -97,8 +97,8 @@
          <dt>Can I listen using my own media player?</dt>  
          <dd>Yes! Simply point your media player to one of the following locations:
            <ul>  
-             <li><a href="http://hackernewsradio.com:8000/news.ogg.m3u">http://hackernewsradio.com:8000/news.ogg</a></li>
-             <li><a href="http://hackernewsradio.com:8000/news.mp3.m3u">http://hackernewsradio.com:8000/news.mp3</a></li>
+             <li><a href="http://listen.hackernewsradio.com:8000/news.ogg.m3u">http://listen.hackernewsradio.com:8000/news.ogg</a></li>
+             <li><a href="http://listen.hackernewsradio.com:8000/news.mp3.m3u">http://listen.hackernewsradio.com:8000/news.mp3</a></li>
            </ul>
          </dd>
 
@@ -114,12 +114,13 @@
 <footer class="main-footer clearfix">
       <div id=player class=panel>
 	<audio controls=control preload=none height=30 width=120>
-	  <source src="http://hackernewsradio.com:8000/news.ogg" type="audio/ogg"/>
-	  <source src="http://hackernewsradio.com:8000/news.mp3" type="audio/mpeg"/>
+	  <source src="http://listen.hackernewsradio.com:8000/news.ogg" type="audio/ogg"/>
+	  <source src="http://listen.hackernewsradio.com:8000/news.mp3" type="audio/mpeg"/>
 	  
 	  <object width=400 height=30 type="application/x-shockwave-flash" data="mediaelement/flashmediaelement.swf">
             <param name=movie value="mediaelement/flashmediaelement.swf"/>
-            <param name=flashvars value="controls=true&file=http://hackernewsradio.com:8000/news.mp3"/>
+            <param name=flashvars value="controls=true&file=http://listen.hackernewsradio.com:8000/news.mp3"/>
+	    <p>Audio not supported</p>
 	  </object>
 	</audio>
       </div>
@@ -138,8 +139,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery||document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>');</script>
 
+  <script src="mediaelement/mediaelement-and-player.js"></script>
 
-  <script defer src='js/646250e.js'></script>
+  <script defer src='js/80695ba.js'></script>
 
 
   
