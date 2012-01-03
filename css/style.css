@@ -378,7 +378,10 @@ dt {
 }
 
 
-
+audio {
+  width: 120px;
+  height: 30px;
+}
 
 
 #soundfail {

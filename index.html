@@ -57,16 +57,17 @@
              <li>While not crash
              <ul>
                <li>Fetch a list of the top 10 <a href="http://news.ycombinator.com">Hacker News</a> submissions as displayed on the main news page.</li>
-               <li>For each submission</li>
+               <li>For each submission
                <ul>
                 <li>Extract source article text</li>
                 <li>Extract discussion text</li>
                 <li>Synthesize speech</li>
                 <li>Write to icecast stream</li>
                </ul>
+               </li>
              </ul>
 	     </li>
-           </ul
+           </ul>
 	 </dd>
 	 
 	 <dt>What did you use to make this?</dt>  
@@ -110,24 +111,24 @@
            <a href="http://twitter.com/jeffsigmon">Jeff Sigmon</a>
          </dd>
      </dl>
-    </row>
+   </div>
 
    </div>      
 </div>
 <footer class="main-footer clearfix">
       <div id="player" class="panel">
-	<audio controls="control" preload="none" height="30" width="120">
+	<audio controls="controls" preload="none">
 	  <source src="http://listen.hackernewsradio.com:8000/news.ogg" type="audio/ogg" />
 	  <source src="http://listen.hackernewsradio.com:8000/news.mp3" type="audio/mpeg" />
 	  <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
 	  <object width="400" height="30" type="application/x-shockwave-flash" data="mediaelement/flashmediaelement.swf">
             <param name="movie" value="mediaelement/flashmediaelement.swf" />
-            <param name="flashvars" value="controls=true&file=http://listen.hackernewsradio.com:8000/news.mp3" />
+            <param name="flashvars" value="controls=true&amp;file=http://listen.hackernewsradio.com:8000/news.mp3" />
 	    <p>Audio not supported</p>
 	  </object>
 	</audio>
       </div>
-      <img src="img/listen.png"  />
+      <img src="img/listen.png" alt="Listen"  />
       <div id="credit" class="panel">
         <p>Photo of <a href="http://de.wikipedia.org/wiki/Funkturm_Wien-Arsenal">Wien-Arsenal</a></p>
         <p><a href="http://www.andreaspolster.com">© Andreas Polster</a></p>

@@ -2,7 +2,9 @@
     $(function (){
 	$('a').smoothScroll();
 	$('audio').mediaelementplayer({
-	    features: ['playpause','current','volume','fullscreen']
+	    features: ['playpause','current','volume','fullscreen'], 
+	    audioWidth: 120,
+	    audioHeight: 30
 	});
 
 	if (smoke) {
